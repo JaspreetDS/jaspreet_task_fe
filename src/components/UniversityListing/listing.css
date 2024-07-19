@@ -1,0 +1,116 @@
+.university-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 0px;
+}
+
+.university-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .filter-container {
+    flex-direction: row;
+  }
+}
+
+.filter-item {
+  flex: 1;
+}
+
+.filter-item > * {
+  width: 100%;
+}
+
+.university-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+select.sorting-dropdown {
+  border-radius: 100px;
+}
+.filter-item > * {
+  width: 98%;
+}
+.university-card {
+  position: relative;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-bottom: 80px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.university-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.university-card h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.university-card p {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.university-card-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.university-card-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
